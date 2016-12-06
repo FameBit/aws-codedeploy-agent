@@ -34,7 +34,7 @@ define :download_installer do
 
   rbenv_global node['aws-codedeploy-agent']['rbenv_ruby-version']
 
-  %w(simple_pid gli logging zip).each do |gem|
+  %w(simple_pid gli logging rubyzip).each do |gem|
     rbenv_gem gem do
       rbenv_version node['aws-codedeploy-agent']['rbenv_ruby-version']
     end
