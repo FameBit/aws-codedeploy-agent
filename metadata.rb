@@ -13,7 +13,7 @@ supports 'debian'
 
 depends 'ohai'
 depends 'build-essential'
-depends 'ruby_rbenv'
+depends 'ruby_rbenv', '= 1.2.1'
 depends 'ruby_build'
 depends 'cloudcli'
 depends 'ark', '= 0.9.0'
