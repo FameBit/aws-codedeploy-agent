@@ -45,6 +45,11 @@ define :download_installer do
     version node['aws-codedeploy-agent']['aws_sdk_core-version']
   end
 
+  rbenv_gem 'concurrent-ruby' do
+    rbenv_version node['aws-codedeploy-agent']['rbenv_ruby-version']
+    version node['aws-codedeploy-agent']['concurrent-ruby']
+  end
+
   link '/usr/bin/ruby2.0' do
     to '/opt/rbenv/versions/2.0.0-p645/bin/ruby'
   end
